@@ -1,6 +1,9 @@
 body{
     font-family: roboto, serif;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 div.header{
@@ -22,12 +25,11 @@ div.header{
 }
 
 .header .top-bar{
-    width:75%;
     display:flex;
     justify-content: space-between;
-    align-self: center;
     gap:30px;
-    padding:1em 0 0 0;
+    padding:1em 12.5%;
+    box-shadow: 0px 4px 20px rgba(0,0,0,.2);
     
 }
 .header .flush-right{
@@ -148,17 +150,41 @@ color: #68696b;;
 .action-card{
     background-color: #3882F6;
     margin: 3em 12.5%;
-    border-radius: 20px;
-    /* display: flex; */
+    border-radius: 10px;
+    display: flex;
     /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap:5em;
+    flex:1 1 auto;
+
 }
 
 .action-card button{
-    background-color:#E5E7EB ;
-    padding: 15px;
+    border: 2px solid #E5E7EB ;
+    background-color: #3882F6;
+
+    padding: 10px;
     border-radius: 7px;
-    border:none;
-    color: #3882F6;
+    color: #E5E7EB;
     font-weight: bold;
     font-size: larger;
+    flex-grow: 0;
+
+    /* height: 25px; */
+}
+
+.action-card p,.action-card h1{
+    margin: 0;
+    color: #E5E7EB ;
+    text-align: left;
+}
+
+/* ------------------------------ Footer -------------------------- */
+
+.footer{
+    margin-top: auto;
+    background-color: #1F2937;
+    color:#E5E7EB;
 }
