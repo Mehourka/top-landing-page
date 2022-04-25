@@ -130,9 +130,9 @@ color: #68696b;;
 /* ------------------- Quote -------------------- */
 
 .quote{
-    background-color: #E5E7EB;
+    background-color: #eceff5;
     padding: 2em 15%;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 300;
     font-style: italic;
 }
